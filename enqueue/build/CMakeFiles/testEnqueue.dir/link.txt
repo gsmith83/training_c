@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/testEnqueue.dir/enqueueTest.c.o  -o testEnqueue -rdynamic /home/gsmith/core-c/prefix/lib/libdof-oal.so.7.0 /home/gsmith/core-c/prefix/lib/libdof-pcr.so.2.0 /home/gsmith/core-c/prefix/lib/libdof-inet.so.2.0 -Wl,-rpath,/home/gsmith/core-c/prefix/lib 
