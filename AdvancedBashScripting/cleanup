@@ -1,0 +1,15 @@
+#!/bin/bash
+# Proper header for a Bash script
+
+DIRTY_DIR=./
+# Variables are better; will allow for easy future modification
+
+echo "Cleaning up .out files."
+
+cd $DIRTY_DIR
+
+rm *.out
+
+echo "Clean up finished."
+
+exit # The proper method of exiting from a script.
