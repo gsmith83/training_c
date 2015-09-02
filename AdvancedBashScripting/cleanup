@@ -4,12 +4,10 @@
 DIRTY_DIR=./
 # Variables are better; will allow for easy future modification
 
-echo "Cleaning up .out files."
-
 cd $DIRTY_DIR
 
-rm *.out
+sed -i -e 's/\r$//' $1
 
-echo "Clean up finished."
+echo $1 "cleaned"
 
 exit # The proper method of exiting from a script.
