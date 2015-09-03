@@ -1,0 +1,69 @@
+#!/bin/bash
+
+MINPARAMS=2
+
+# positional variable $0 is name of script
+echo "The name of this script is \"$0\"" # ./ for current directory included
+echo "The name of this script is \"`basename $0`\"" # ./ stripped out
+
+# For loop
+echo -n "Values of \"a\" in the loop are: " # -n specifies not to print new line
+for a in 7 8 9 11
+do
+    echo -n "$a "
+done
+
+echo    # will print a new line
+
+# Read statement
+echo -n "Enter \"a\" "
+read a
+echo -n "The value of \"a\" is now $a"
+
+echo
+
+# simple variable assignment
+a=23
+echo $a
+b=$a
+echo $b
+
+# command substitution
+a=`echo Hello!`     # assigns result of 'echo' command to 'a'. Notice use of backtick `
+echo $a
+a=`ls -l`
+echo $a
+echo
+echo "$a"   # The quoted variable preserves whitespace
+
+# positional variables
+if [ -n "$1" ]      # tested variable is quoted.
+then
+ echo "Parameter #1 is $1" # Need quotes to escape #
+fi
+
+if [ -n "$2" ]
+then
+ echo "Parameter #2 is $2" 
+fi
+
+if [ -n "${10}" ]   # params > $9 must be enclosed in {brackets}
+then
+ echo "Parameter #10 is ${10}"
+fi
+
+echo "All command-line parameters are: "$*""
+
+if [ $# -lt "$MINPARAMS" ]  #  $# number of arguments passed in
+then
+ echo
+ echo "This script needs at least $MINPARAMS command-line arguments"
+fi
+
+# access last parameter
+lastarg=${!#}
+echo "The last parameter was $lastarg"
+
+echo
+
+exit 0
