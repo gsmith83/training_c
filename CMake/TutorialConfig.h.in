@@ -1,0 +1,6 @@
+// the configured options and settings for Tutorial
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+// when cmake configures this header file, the values for @...@ will be replaced
+// by the values form the CMakeLists.txt file
