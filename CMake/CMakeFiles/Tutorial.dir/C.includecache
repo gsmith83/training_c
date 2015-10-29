@@ -17,4 +17,6 @@ math.h
 -
 TutorialConfig.h
 /home/gsmith/tutorials_external/CMake/TutorialConfig.h
+MathFunctions.h
+/home/gsmith/tutorials_external/CMake/MathFunctions.h
 

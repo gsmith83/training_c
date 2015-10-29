@@ -1,1 +1,1 @@
-/usr/bin/cc     CMakeFiles/Tutorial.dir/tutorial.c.o  -o Tutorial -rdynamic 
+/usr/bin/cc     CMakeFiles/Tutorial.dir/tutorial.c.o  -o Tutorial -rdynamic MathFunctions/libMathFunctions.a 

@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/gsmith/tutorials_external/CMake/tutorial.c" "/home/gsmith/tutorials_external/CMake/CMakeFiles/Tutorial.dir/tutorial.c.o"
+  "/home/gsmith/tutorials_external/CMake/MathFunctions/mysqrt.c" "/home/gsmith/tutorials_external/CMake/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gsmith/tutorials_external/CMake/MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
